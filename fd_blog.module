@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains fd_blog.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function fd_blog_theme($existing, $type, $theme, $path) {
+  return array(
+    'fd_blog' => [
+      'variables' => array('items'=> array(), 'title'=> ''),
+    ],
+    'fd_blog_post' => [
+      'variables' => array('items'=> array(), 'title'=> ''),
+    ],
+  );
+
+}

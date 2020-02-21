@@ -1,0 +1,25 @@
+fd_blog.list:
+  path: '/fd/blog'
+  defaults:
+    _controller: 'Drupal\fd_blog\Controller\FdController::getList'
+    _title: 'Get List'
+  requirements:
+    _permission: 'access content'
+fd_blog.detail:
+  path: '/fd/blog/{post_id}'
+  defaults:
+    _controller: 'Drupal\fd_blog\Controller\FdController::getDetail'
+    _title: 'Get detail'
+  requirements:
+    _permission: 'access content'
+
+fd_blog.fd_form:
+  path: '/admin/config/fd_blog/fd'
+  defaults:
+    _form: '\Drupal\fd_blog\Form\FdForm'
+    _title: 'Fd BLOG API'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

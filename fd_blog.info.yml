@@ -1,0 +1,5 @@
+name: 'fd_blog'
+type: module
+description: 'Custom module'
+core: 8.x
+package: 'Custom'
